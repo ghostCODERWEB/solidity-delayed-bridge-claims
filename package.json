@@ -1,0 +1,19 @@
+{
+  "name": "solidity-delayed-bridge-claims",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Funded message epochs with publisher delay, cancellable pending roots and replay-protected token releases.",
+  "license": "MIT",
+  "scripts": {
+    "compile": "node scripts/compile.mjs",
+    "test": "npm run compile && node scripts/test.mjs",
+    "deploy": "npm run compile && node scripts/deploy.mjs"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "5.4.0",
+    "ethers": "6.15.0",
+    "ganache": "7.9.2",
+    "solc": "0.8.30"
+  }
+}

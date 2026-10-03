@@ -1,0 +1,12 @@
+{
+  "name": "solidity-delayed-bridge-claims",
+  "title": "Delayed bridge claim escrow",
+  "contract": "DelayedBridgeEscrow",
+  "description": "Funded message epochs with publisher delay, cancellable pending roots and replay-protected token releases.",
+  "args": [
+    "$TOKEN",
+    86400,
+    "$ADMIN"
+  ],
+  "assumptions": "Centralized publisher escrow, not a trustless cross-chain bridge. No source-chain proof verification or permissionless fraud challenge. Owner can cancel before activation. Message IDs are globally consumed across batches and must include source-chain uniqueness when constructed externally."
+}
